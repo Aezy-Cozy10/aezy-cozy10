@@ -1,0 +1,120 @@
+body {
+    background-color:lavender;
+    text-align: center;
+    font-family: Arial, sans-serif;
+     background: linear-gradient(pink,purple);
+    border: 5px solid black;
+    border-radius: 15px;
+     padding: 20px;
+    margin: 20px;}
+    p {color: darkblue;}
+    button {
+    background-color: purple;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 10px;
+    transition: 0.3s;}
+    button:hover{
+        background-color:mediumpurple;
+         transform: scale(1.05);}
+        div { box-shadow: 5px 5px 15px gray;}
+        button {padding:20px;}
+        .card {
+            background-color: white;
+            width: 300px;
+            border-radius: 10px;
+            padding: 20px;
+            margin: auto;
+            box-shadow: 5px 5px 15px gray;}
+            #clock {
+                position: fixed;
+                top: 20px;
+                right: 20px;
+                background:lavender;
+                padding: 12px 20px;
+                border-radius: 15px;
+                box-shadow: 5px 5px 15px gray;
+                font-size: 18px;
+                color: purple;
+                font-weight: bold;}
+                #search {
+                    padding: 12px;
+                    width: 300px;
+                    border-radius: 10px;
+                    border: 2px solid purple;
+                    margin: 20px;
+                    font-size: 16px;}
+                    #topBtn {
+                        position: fixed;
+                        bottom: 20px;
+                        right: 20px;
+                        background: purple;
+                        color: white;
+                        padding: 12px 18px;
+                        border: none;
+                        border-radius: 15px;
+                        cursor: pointer;
+                        display: none;}
+                        #topBtn:hover {
+                            background: hotpink;
+                            transform: scale(1.05);}
+                            .searchBox {
+                                display: flex;
+                                width: 350px;
+                            background: lavender;
+                            padding: 12px 18px;
+                            border-radius: 40px;
+                            box-shadow: 5px 5px 15px gray;
+                            align-items: center;
+                            gap: 10px;
+                            margin: 25px auto;}
+                                .searchBox input {
+                                    background: transparent;
+                                    width: 100%;
+                                    outline: none;
+                                    border: none;
+                                    font-size: 17px;}
+                                    .searchBox:focus-within {
+                                        box-shadow: 0 0 15px plum;}
+                            .option {
+                                display: block;
+                                margin: 15px auto;
+                                padding: 15px; 
+                                background: lavender;
+                                width: 260px;
+                                border-radius: 15px;
+                                cursor: pointer;
+                                font-size: 20px;
+                                transition: 0.3s;}
+                                .option:hover {
+                                    transform: scale(1.05);
+                                    box-shadow: 0 5px 15px gray;}
+                                .nameBox {
+                                    width: 260px;
+                                    padding: 15px;
+                                    display : block;
+                                    margin: 20px auto;
+                                    border:none;
+                                    border-radius: 20px;
+                                    background: white;
+                                    font-size: 18px;
+                                    text-align: center;
+                                    box-shadow: 5px 5px 15px gray;
+                                    outline: none;}
+                                    .nameBox:focus {
+                                        box-shadow: 0 0 15px plum;
+                                        transform: scale(1.03);}
+                                        .searchBar{
+                                            width: 350px;
+                                            padding: 12px;
+                                            border-radius: 25px;
+                                            border: 2px solid purple;
+                                            font-size: 16px;
+                                            display: block;
+                                            margin: 20px auto;
+                                            outline: none;
+                                        }
+ 
