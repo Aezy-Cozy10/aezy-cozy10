@@ -117,4 +117,53 @@ body {
                                             margin: 20px auto;
                                             outline: none;
                                         }
- 
+ .musicPlayer{
+
+    width:70%;
+    margin:30px auto;
+
+    background:white;
+
+    padding:25px;
+
+    border-radius:20px;
+
+    box-shadow:5px 5px 15px gray;
+
+}
+
+.musicPlayer audio{
+
+    width:100%;
+
+}
+.musicButton{
+    display:block;
+    width:80%;
+    margin:10px auto;
+    padding:12px;
+
+    background:white;
+
+    color:purple;
+
+    border:2px solid purple;
+
+    border-radius:15px;
+
+    font-size:17px;
+
+    cursor:pointer;
+
+    transition:0.3s;
+}
+
+.musicButton:hover{
+
+    background:plum;
+
+    color:white;
+
+    transform:scale(1.03);
+
+}

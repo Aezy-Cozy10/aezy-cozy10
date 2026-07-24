@@ -186,3 +186,221 @@ function updateClock() {
         }
     }
 }
+                        function openGmail() {
+    window.open("https://mail.google.com", "_blank");
+}
+
+function openOutlook() {
+    window.open("https://outlook.live.com", "_blank");
+}
+
+function openZoom() {
+    window.open("https://zoom.us", "_blank");
+}
+
+function openGoogleMeet() {
+    window.open("https://meet.google.com", "_blank");
+}
+
+function openTeams() {
+    window.open("https://teams.microsoft.com", "_blank");
+}
+
+function openSlack() {
+    window.open("https://slack.com", "_blank");
+}
+
+function openDiscord() {
+    window.open("https://discord.com/app", "_blank");
+}
+
+function openWhatsAppWeb() {
+    window.open("https://web.whatsapp.com", "_blank");
+}
+
+function openTelegramWeb() {
+    window.open("https://web.telegram.org", "_blank");
+}
+
+function openSkype() {
+    window.open("https://web.skype.com", "_blank");
+}
+function openGoogleSheets() {
+    window.open("https://docs.google.com/spreadsheets", "_blank");
+}
+
+function openGoogleSlides() {
+    window.open("https://docs.google.com/presentation", "_blank");
+}
+
+function openMicrosoftExcel() {
+    window.open("https://www.office.com/launch/excel", "_blank");
+}
+
+function openMicrosoftPowerPoint() {
+    window.open("https://www.office.com/launch/powerpoint", "_blank");
+}
+
+function openCanva() {
+    window.open("https://www.canva.com", "_blank");
+}
+
+function openAdobeExpress() {
+    window.open("https://www.adobe.com/express", "_blank");
+}
+
+function openDropbox() {
+    window.open("https://www.dropbox.com", "_blank");
+}
+function openGoogleDrive() {
+    window.open("https://drive.google.com", "_blank");
+}
+
+function openOneDrive() {
+    window.open("https://onedrive.live.com", "_blank");
+}
+
+function openGoogleCalendar() {
+    window.open("https://calendar.google.com", "_blank");
+}
+
+function openGoogleKeep() {
+    window.open("https://keep.google.com", "_blank");
+}
+
+function openTodoist() {
+    window.open("https://todoist.com", "_blank");
+}
+
+function openTrello() {
+    window.open("https://trello.com", "_blank");
+}
+
+function openAsana() {
+    window.open("https://asana.com", "_blank");
+}
+
+function openClickUp() {
+    window.open("https://clickup.com", "_blank");
+}
+
+function openEvernote() {
+    window.open("https://evernote.com", "_blank");
+}
+function searchWork() {
+    let input=document.getElementById("search");
+    let filter=input.value.toUpperCase();
+    let buttons=document.getElementsByClassName("workButton");
+       for(let i=0; i< buttons.length; i++){
+        let text = buttons[i].innerText;
+        if (text.toUpperCase().indexOf(filter) > -1) {
+
+            buttons[i].style.display = "inline-block";
+
+        } else {
+
+            buttons[i].style.display = "none";
+
+        }
+
+    }
+
+}
+       function openTikTok() {
+    window.open("https://www.tiktok.com", "_blank");
+}
+
+function openX() {
+    window.open("https://x.com", "_blank");
+}
+
+function openReddit() {
+    window.open("https://www.reddit.com", "_blank");
+}
+
+function openSnapchat() {
+    window.open("https://web.snapchat.com", "_blank");
+}
+
+function openThreads() {
+    window.open("https://www.threads.net", "_blank");
+}
+function openShellShockers() {
+    window.open("https://shellshock.io", "_blank");
+}
+
+function openKrunker() {
+    window.open("https://krunker.io", "_blank");
+}
+
+function openSlope() {
+    window.open("https://slopegame.com", "_blank");
+}
+
+function open2048() {
+    window.open("https://play2048.co", "_blank");
+}
+
+function openChess() {
+    window.open("https://www.chess.com/play", "_blank");
+}
+
+function openWordle() {
+    window.open("https://www.nytimes.com/games/wordle/index.html", "_blank");
+}
+
+function openLittleAlchemy() {
+    window.open("https://littlealchemy2.com", "_blank");
+}
+
+function openQuickDraw() {
+    window.open("https://quickdraw.withgoogle.com", "_blank");
+}
+
+function openGeoGuessr() {
+    window.open("https://www.geoguessr.com", "_blank");
+}
+
+function openSudoku() {
+    window.open("https://sudoku.com", "_blank");
+}
+function searchBored() {
+
+    let input = document.getElementById("search");
+    let filter = input.value.toUpperCase();
+
+    let buttons = document.getElementsByClassName("boredButton");
+
+    for (let i = 0; i < buttons.length; i++) {
+
+        let text = buttons[i].innerText;
+
+        if (text.toUpperCase().indexOf(filter) > -1) {
+
+            buttons[i].style.display = "inline-block";
+
+        } else {
+
+            buttons[i].style.display = "none";
+
+        }
+
+    }
+
+}
+function playSong(songFile, songName) {
+
+    let player = document.getElementById("audioPlayer");
+
+    player.pause();
+
+    player.src = songFile;
+
+    player.load();
+
+    player.play();
+
+    document.getElementById("songTitle").innerHTML =
+        "🎧 Now Playing: " + songName;
+
+}

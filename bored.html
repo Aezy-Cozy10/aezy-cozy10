@@ -1,6 +1,51 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <title>🎮Cozy Bored Hub🎮</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
     <body>
-        <h1>COMING SOON!!!</h1>
+        <p id="clock"></p>
+        <h1>🌷Aezy Cozy Website🌷</h1>
+        <h2>🎮Cozy Bored Hub🎮</h2>
+        <p>Take a break and enjoy yourself!</p>
+        <hr>
+        <input type="text" id="search" class="searchBar" placeholder="Search Fun Things..." onkeyup="searchBored()">
+        <hr>
+        <h3>📱 Social Media</h3>
+        <button class="boredButton" onclick="openYoutube()">YouTube</button>
+        <button class="boredButton" onclick="openInstagram()">Instagram</button>
+        <button class="boredButton" onclick="openFacebook()">Facebook</button>
+        <button class="boredButton" onclick="openPinterest()">Pinterest</button>
+        <button class="boredButton" onclick="openTikTok()">TikTok</button>
+        <button class="boredButton" onclick="openX()">X (Twitter)</button>
+        <button class="boredButton" onclick="openReddit()">Reddit</button>
+        <button class="boredButton" onclick="openDiscord()">Discord</button>
+        <button class="boredButton" onclick="openSnapchat()">Snapchat</button>
+        <button class="boredButton" onclick="openThreads()">Threads</button>  
+        <hr>
+        <h3>🎮 Games</h3>
+        <button class="boredButton" onclick="openShellShockers()">Shell Shockers</button>
+        <button class="boredButton" onclick="openKrunker()">Krunker</button>
+        <button class="boredButton" onclick="openSlope()">Slope</button>
+        <button class="boredButton" onclick="open2048()">2048</button>
+        <button class="boredButton" onclick="openChess()">Chess</button>
+        <button class="boredButton" onclick="openWordle()">Wordle</button>
+        <button class="boredButton" onclick="openLittleAlchemy()">Little Alchemy</button>
+        <button class="boredButton" onclick="openQuickDraw()">Quick, Draw!</button>
+        <button class="boredButton" onclick="openGeoGuessr()">GeoGuessr</button>
+        <button class="boredButton" onclick="openSudoku()">Sudoku</button>
+        <hr>
+        <h3>🎵 Music</h3>
+        <button class="musicButton" onclick="playSong('songs/song1.mp3','Like Jennie')">Like Jennie🎧 by Jennie</button>
+        <button class="musicButton" onclick="playSong('songs/song2.mp3','Me and My')">Me and My🎧 by Blackpink</button>
+        <button class="musicButton" onclick="playSong('songs/song3.mp3','Woman')">Woman🎧 by Doja Cat</button>
+        <br><br>
+        <div class="musicPlayer">
+            <h4 id="songTitle">Now Playing: Nothing🎧</h4>
+            <audio id="audioPlayer" controls>
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+        <script src="script.js"></script>
     </body>
-</html>
