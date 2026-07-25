@@ -1,6 +1,37 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <title>☪Cozy Islamic Hub☪</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
     <body>
-        <h1>COMING SOON!!!</h1>
+        <p id="clock"></p>
+        <h1>🌷Aezy Cozy Website🌷</h1>
+        <h2>☪Cozy Islamic Hub☪</h2>
+        <p>A peaceful place to read, listen, and grow closer to Allah!</p>
+        <hr>
+        <input type="text" id="search" class="searchBar" placeholder="Search Islamic Resources..." onkeyup="searchIslamic()">
+        <hr>
+        <hr>
+        <h3>📖 Quran</h3>
+        <button class="islamicButton" onclick="openQuran()">📖 Read Quran</button>
+        <button class="islamicButton" onclick="openTranslation()">🌍 Read with Translation</button>
+        <button class="islamicButton" onclick="openTafsir()">📚 Read Tafsir</button>
+        <hr>
+        <h3>🎧 Islamic Audio</h3>
+        <hr>
+        <h3>🎧 Listen to Quran</h3>
+        <button class="islamicButton" onclick="playSurah('quran/surah1.mp3','Surah Al-Baqarah')">📖 Surah Al-Baqarah</button>
+        <button class="islamicButton" onclick="playSurah('quran/surah2.mp3','Surah Al-Muzzammil')">🌙 Surah Al-Muzzammil</button>
+        <button class="islamicButton" onclick="playSurah('quran/surah3.mp3','Surah Ar-Rahman')">🌿 Surah Ar-Rahman</button>
+        <button class="islamicButton" onclick="playSurah('quran/surah4.mp3','Surah Al-Jumuah')">🕌 Surah Al-Jumu'ah </button>
+        <button class="islamicButton" onclick="playSurah('quran/surah5.mp3','Surah Al-Mulk')">⭐ Surah Al-Mulk </button>
+        <br><br>
+        <div class="musicPlayer">
+        <h4 id="surahTitle">Now Playing: Nothing 📖</h4>
+        <audio id="surahPlayer" controls>
+        </audio>
+        </div>
+        <script src="script.js"></script>
     </body>
 </html>

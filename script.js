@@ -50,13 +50,22 @@ function updateClock() {
                 buttons[i].style.display = "inline-block";} 
                 else { buttons[i].style.display = "none";}}}
                     let topButton = document.getElementById("topBtn");
-                    window.onscroll = function() {
-                        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {  
-                            topButton.style.display = "block";
-                        } else {
-                            topButton.style.display = "none";
-                        }
-                    }
+
+window.onscroll = function () {
+
+    if (!topButton) return;
+
+    if (document.body.scrollTop > 20 ||
+        document.documentElement.scrollTop > 20) {
+
+        topButton.style.display = "block";
+
+    } else {
+
+        topButton.style.display = "none";
+
+    }
+};
                     function topFunction() {
                         window.scrollTo({ top: 0,
                              behavior: 'smooth' });}
@@ -403,4 +412,58 @@ function playSong(songFile, songName) {
     document.getElementById("songTitle").innerHTML =
         "🎧 Now Playing: " + songName;
 
+}
+function openShrek() {
+    window.open("https://maxfun.com.pk/moviepreview-11744.html", "_blank");
+}
+
+function openDangal() {
+    window.open("https://maxfun.com.pk/moviepreview-9762.html", "_blank");
+}
+
+function openTaareZameenPar() {
+    alert("🌷 Aezy Cozy: This movie will be added soon!💜 Stay tuned! ")
+}
+
+function openKpopDemonHunters() {
+    alert("🌷 Aezy Cozy: This movie will be added soon!💜 Stay tuned! ");
+}
+
+function openInsideOut() {
+    window.open("https://maxfun.com.pk/moviesplay-11908.html", "_blank");
+}
+function openQuran() {
+    window.open("https://quran.com", "_blank");
+}
+
+function openTranslation() {
+    window.open("https://quran.com/en", "_blank");
+}
+
+function openTafsir() {
+    window.open("https://quran.com/1:1/tafsirs/en-tafisr-ibn-kathir", "_blank");
+}
+function playSurah(surahFile, surahName) {
+    let player = document.getElementById("surahPlayer");
+
+    player.pause();
+    player.src = surahFile;
+    player.load();
+    player.play();
+
+    document.getElementById("surahTitle").innerHTML =
+        "📖 Now Playing: " + surahName;
+}
+function searchIslamic() {
+    let input = document.getElementById("search").value.toLowerCase();
+
+    let buttons = document.querySelectorAll(".islamicButton");
+
+    buttons.forEach(function(button) {
+        if (button.innerText.toLowerCase().includes(input)) {
+            button.style.display = "inline-block";
+        } else {
+            button.style.display = "none";
+        }
+    });
 }
