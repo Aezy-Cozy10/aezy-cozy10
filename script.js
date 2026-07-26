@@ -467,3 +467,14 @@ function searchIslamic() {
         }
     });
 }
+function playNaat(naatFile, naatName) {
+    let player = document.getElementById("naatPlayer");
+
+    player.pause();
+    player.src = naatFile;
+    player.load();
+    player.play();
+
+    document.getElementById("naatTitle").innerHTML =
+        "🤍 Now Playing: " + naatName;
+}

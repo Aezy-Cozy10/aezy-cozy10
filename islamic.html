@@ -18,8 +18,6 @@
         <button class="islamicButton" onclick="openTranslation()">🌍 Read with Translation</button>
         <button class="islamicButton" onclick="openTafsir()">📚 Read Tafsir</button>
         <hr>
-        <h3>🎧 Islamic Audio</h3>
-        <hr>
         <h3>🎧 Listen to Quran</h3>
         <button class="islamicButton" onclick="playSurah('quran/surah1.mp3','Surah Al-Waqia')">📖 Surah Al-Waqia</button>
         <button class="islamicButton" onclick="playSurah('quran/surah2.mp3','Surah Al-Muzzammil')">🌙 Surah Al-Muzzammil</button>
@@ -30,6 +28,19 @@
         <div class="musicPlayer">
         <h4 id="surahTitle">Now Playing: Nothing 📖</h4>
         <audio id="surahPlayer" controls>
+        </audio>
+        </div>
+        <h3>🎧 Islamic Audio</h3>
+        <button class="islamicButton" onclick="playNaat('naats/naat1.mp3','Tajdar E Haram')">🤍 Tajdar E Haram</button>
+        <button class="islamicButton" onclick="playNaat('naats/naat2.mp3','Humne Aankhon Se Dekha Nahi Hai Magar')">🌸 Humne Aankhon Se Dekha Nahi Hai Magar</button>
+        <button class="islamicButton" onclick="playNaat('naats/naat3.mp3','Faslon Ko Takkaluf')">🕌 Faslon Ko Takkaluf</button>
+        <button class="islamicButton" onclick="playNaat('naats/naat4.mp3','Tamanna Muddaton Se Hai')">💜 Tamanna Muddaton Se Hai</button>
+        <button class="islamicButton" onclick="playNaat('naats/naat5.mp3','Seher Ka Waqt Tha')">🌅 Seher Ka Waqt Tha</button>
+        <button class="islamicButton" onclick="playNaat('naats/naat6.mp3','Meri Ulfat Madine Se Yun Hi Nahi')">🕋 Hum Madine se Allah kyu agaye</button>
+        <br><br>
+        <div class="musicPlayer">
+        <h4 id="naatTitle">Now Playing: Nothing 🤍</h4>
+        <audio id="naatPlayer" controls>
         </audio>
         </div>
         <script src="script.js"></script>
